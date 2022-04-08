@@ -30,6 +30,11 @@ def flat_generator(my_list):
 			yield elem
 
 
-for item in MyIterator(nested_list):
-		print(item)
+# for item in MyIterator(nested_list):
+# 		print(item)
 
+# flat_list = [",".join(str(item).split()) for item in MyIterator(nested_list)]
+# print(flat_list)
+
+for item in flat_generator(nested_list):
+	print(item)
